@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { login } from "./login";
 
 export default function Home() {
   const [message, setmessage] = useState("Hi Nigga");
@@ -15,5 +16,10 @@ export default function Home() {
     };
     fetchData();
   }, []);
-  return <div>{message}</div>;
+  return (
+    <div>
+      {message}
+      <login />
+    </div>
+  );
 }
