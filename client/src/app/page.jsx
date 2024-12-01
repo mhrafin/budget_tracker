@@ -6,19 +6,19 @@ export default function Home() {
   // useEffect(() => {
   //   const fetchData = async () => {
   //     try {
-  //       const response = await fetch("http://localhost:8080/api/home");
+  //       const response = await fetch("http://localhost:8080/");
   //       const data = await response.json();
   //       setmessage(data.message);
   //     } catch (error) {
-  //       console.error("error fetching the data", error);
+  //       console.log("error fetching the data", error);
   //     }
   //   };
   //   fetchData();
   // }, []);
   return (
     <div>
-      <Login />
       {/* {message} */}
+      {/* <Login /> */}
     </div>
   );
 }
